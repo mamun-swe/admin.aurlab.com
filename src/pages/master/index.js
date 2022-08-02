@@ -4,6 +4,7 @@ import { appRoutes } from "../../routes"
 import { Navbar } from "../../components/navbar"
 import { Sidebar } from "../../components/sidebar"
 import { Drawer } from "../../components/drawer"
+import { SidebarLinks } from "../../components/sidebar-links"
 import FourOFour from "../404"
 
 const Index = () => {
@@ -17,7 +18,11 @@ const Index = () => {
                 show={show}
                 hidden={"lg"}
                 onClick={() => setShow(!show)}
-            />
+            >
+                <div className="p-4">
+                    <SidebarLinks routes={appRoutes} />
+                </div>
+            </Drawer>
 
             <div className="lg:pl-[260px] pt-[76px]">
                 <div className="p-3 lg:p-4">

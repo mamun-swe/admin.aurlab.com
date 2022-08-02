@@ -1,7 +1,8 @@
 
 import {
     PieChart,
-    List
+    List,
+    Users
 } from "react-feather"
 
 import Dashboard from "../pages/dashboard"
@@ -9,6 +10,8 @@ import Dashboard from "../pages/dashboard"
 import CategoryIndex from "../pages/category"
 import CategoryEdit from "../pages/category/edit"
 import CategoryStore from "../pages/category/store"
+
+import ResearcherIndex from "../pages/researcher"
 
 export const appRoutes = [
     {
@@ -48,5 +51,15 @@ export const appRoutes = [
         inDrawer: false,
         icon: null,
         component: CategoryEdit
-    }
+    },
+    // Researcher
+    {
+        title: "Researcher",
+        name: "researcher index",
+        path: "/dashboard/researcher",
+        exact: true,
+        inDrawer: true,
+        icon: <Users size={20} />,
+        component: ResearcherIndex
+    },
 ]
