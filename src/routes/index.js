@@ -2,7 +2,8 @@
 import {
     PieChart,
     List,
-    Users
+    Users,
+    Book
 } from "react-feather"
 
 import Dashboard from "../pages/dashboard"
@@ -12,6 +13,8 @@ import CategoryEdit from "../pages/category/edit"
 import CategoryStore from "../pages/category/store"
 
 import ResearcherIndex from "../pages/researcher"
+
+import PublicationIndex from "../pages/publication"
 
 export const appRoutes = [
     {
@@ -61,5 +64,15 @@ export const appRoutes = [
         inDrawer: true,
         icon: <Users size={20} />,
         component: ResearcherIndex
+    },
+    // Publication
+    {
+        title: "Publications",
+        name: "publication index",
+        path: "/dashboard/publication",
+        exact: true,
+        inDrawer: true,
+        icon: <Book size={20} />,
+        component: PublicationIndex
     },
 ]

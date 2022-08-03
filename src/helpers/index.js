@@ -18,6 +18,7 @@ export const dateToString = (date) => {
 
 // Date to date
 export const dateTodate = date => {
+    date = new Date(date)
     const day = date.getDate()
     const month = date.getMonth() + 1
     const year = date.getFullYear()
