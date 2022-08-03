@@ -22,5 +22,11 @@ export const dateTodate = date => {
     const day = date.getDate()
     const month = date.getMonth() + 1
     const year = date.getFullYear()
-    return `${day}-${month}-${year}`
+    return `${day}.${month}.${year}`
+}
+
+// Date to year
+export const dateToYear = date => {
+    date = new Date(date)
+    return date.getFullYear()
 }

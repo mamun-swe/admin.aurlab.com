@@ -7,11 +7,11 @@ export const Sidebar = ({ routes }) => {
         <div className="w-[260px] fixed top-0 left-0 h-full bg-white hidden lg:block">
 
             {/* Header */}
-            <div className="p-5">
+            <div className="p-[12px]">
                 <img
                     src={Images.Logo}
                     alt="Logo"
-                    className="w-[80px] h-[35px] mx-auto"
+                    className="w-[50px] h-[50px] mx-auto"
                 />
             </div>
 

@@ -48,10 +48,10 @@ const Index = () => {
                     <img
                         src={Images.Logo}
                         alt="Logo"
-                        className="w-[150px] h-[50px] mx-auto mb-4"
+                        className="w-[64px] h-[64px] mx-auto mb-4"
                     />
 
-                    <Text className="text-[20px] font-bold">Sign in to ResearchTop</Text>
+                    <Text className="text-[20px] font-bold">Sign in to ResearchPortal</Text>
                 </div>
 
                 <div className="px-2 pb-10 md:px-16">

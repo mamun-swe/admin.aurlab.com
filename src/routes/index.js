@@ -13,6 +13,7 @@ import CategoryEdit from "../pages/category/edit"
 import CategoryStore from "../pages/category/store"
 
 import ResearcherIndex from "../pages/researcher"
+import ResearcherShow from "../pages/researcher/show"
 
 import PublicationIndex from "../pages/publication"
 
@@ -64,6 +65,15 @@ export const appRoutes = [
         inDrawer: true,
         icon: <Users size={20} />,
         component: ResearcherIndex
+    },
+    {
+        title: "Show Researcher",
+        name: "researcher show",
+        path: "/dashboard/researcher/:id",
+        exact: true,
+        inDrawer: false,
+        icon: null,
+        component: ResearcherShow
     },
     // Publication
     {
