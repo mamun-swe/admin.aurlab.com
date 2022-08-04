@@ -7,17 +7,15 @@ import {
 } from "react-feather"
 
 import Dashboard from "../pages/dashboard"
-
 import CategoryIndex from "../pages/category"
 import CategoryEdit from "../pages/category/edit"
 import CategoryStore from "../pages/category/store"
-
 import ResearcherIndex from "../pages/researcher"
 import ResearcherShow from "../pages/researcher/show"
-
 import PublicationIndex from "../pages/publication"
-
 import AdminIndex from "../pages/admin"
+import AdminStore from "../pages/admin/store"
+import AccountIndex from "../pages/account"
 
 export const appRoutes = [
     {
@@ -96,5 +94,24 @@ export const appRoutes = [
         inDrawer: true,
         icon: <Users size={20} />,
         component: AdminIndex
+    },
+    {
+        title: "Admin create",
+        name: "admin store",
+        path: "/dashboard/admin/create",
+        exact: true,
+        inDrawer: false,
+        icon: null,
+        component: AdminStore
+    },
+    // My Account
+    {
+        title: "My account",
+        name: "account index",
+        path: "/dashboard/account",
+        exact: true,
+        inDrawer: false,
+        icon: null,
+        component: AccountIndex
     },
 ]

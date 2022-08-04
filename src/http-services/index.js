@@ -5,6 +5,7 @@ import { Category } from "./category"
 import { Researcher } from "./researcher"
 import { Publication } from "./publication"
 import { Admin } from "./admin"
+import { Account } from "./account"
 
 export const Services = {
     Auth,
@@ -12,5 +13,6 @@ export const Services = {
     Category,
     Researcher,
     Publication,
-    Admin
+    Admin,
+    Account
 }

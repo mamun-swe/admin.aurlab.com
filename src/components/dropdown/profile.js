@@ -28,16 +28,9 @@ export const ProfileDropdown = ({ image }) => {
                     <Menu.Items className="absolute right-0 w-[200px] mt-2 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg">
                         <div className="p-3">
                             <Menu.Item>
-                                <Link to="/">
+                                <Link to="/dashboard/account">
                                     <button className="px-3 py-2 w-full text-[15px] rounded-md text-orange-500 hover:bg-orange-100 transition ease-in-out delay-50 text-left">
-                                        Profile
-                                    </button>
-                                </Link>
-                            </Menu.Item>
-                            <Menu.Item>
-                                <Link to="/">
-                                    <button className="px-3 py-2 w-full text-[15px] rounded-md text-orange-500 hover:bg-orange-100 transition ease-in-out delay-50 text-left">
-                                        Setting
+                                        My Account
                                     </button>
                                 </Link>
                             </Menu.Item>

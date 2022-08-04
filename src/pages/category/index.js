@@ -84,10 +84,7 @@ const Index = () => {
                     <CircleButton
                         type="button"
                         className="ml-1"
-                        onClick={() => {
-                            console.log(row._id);
-                            setWillDelete({ id: row._id, show: true, loading: false })
-                        }}
+                        onClick={() => setWillDelete({ id: row._id, show: true, loading: false })}
                     >
                         <Trash2 size={18} />
                     </CircleButton>

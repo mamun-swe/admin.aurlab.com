@@ -25,8 +25,21 @@ const store = async (data) => {
     return await axios.post(`${process.env.REACT_APP_ADMIN_ENDPOINT}admin`, data, header)
 }
 
+/* destroy */
+const destroy = async (id) => {
+    const header = {
+        headers: {
+            api_key: process.env.REACT_APP_API_KEY,
+            Authorization: "Bearer " + localStorage.getItem('token')
+        }
+    }
+
+    return await axios.delete(`${process.env.REACT_APP_ADMIN_ENDPOINT}admin/${id}`, header)
+}
+
 
 export const Admin = {
     index,
-    store
+    store,
+    destroy
 }
