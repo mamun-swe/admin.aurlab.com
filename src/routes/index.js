@@ -17,6 +17,8 @@ import ResearcherShow from "../pages/researcher/show"
 
 import PublicationIndex from "../pages/publication"
 
+import AdminIndex from "../pages/admin"
+
 export const appRoutes = [
     {
         title: "Dashboard",
@@ -84,5 +86,15 @@ export const appRoutes = [
         inDrawer: true,
         icon: <Book size={20} />,
         component: PublicationIndex
+    },
+    // Admin
+    {
+        title: "Admin list",
+        name: "admin index",
+        path: "/dashboard/admin",
+        exact: true,
+        inDrawer: true,
+        icon: <Users size={20} />,
+        component: AdminIndex
     },
 ]
