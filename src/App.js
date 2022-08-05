@@ -7,6 +7,7 @@ import ScrollToTop from "./components/scrollTop"
 import PrivateRoute from "./components/privateRoute"
 
 import Login from "./pages/login"
+import Reset from "./pages/reset"
 import Master from "./pages/master"
 import FourOFour from "./pages/404"
 
@@ -17,6 +18,7 @@ function App() {
         <ScrollToTop>
           <Switch>
             <Route exact path="/" component={Login} />
+            <Route exact path="/reset" component={Reset} />
             <PrivateRoute path="/dashboard">
               <Master />
             </PrivateRoute>
