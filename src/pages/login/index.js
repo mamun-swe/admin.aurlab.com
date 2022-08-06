@@ -48,7 +48,7 @@ const Index = () => {
                     <img
                         src={Images.Logo}
                         alt="Logo"
-                        className="w-[64px] h-[64px] mx-auto mb-4"
+                        className="w-[150px] h-[40px] mx-auto mb-4"
                     />
 
                     <Text className="text-[20px] font-bold">Sign in to ResearchPortal</Text>

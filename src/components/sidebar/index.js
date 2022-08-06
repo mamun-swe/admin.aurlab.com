@@ -11,7 +11,7 @@ export const Sidebar = ({ routes }) => {
                 <img
                     src={Images.Logo}
                     alt="Logo"
-                    className="w-[50px] h-[50px] mx-auto"
+                    className="w-[150px] h-[40px] mx-auto"
                 />
             </div>
 
