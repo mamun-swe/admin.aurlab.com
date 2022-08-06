@@ -51,7 +51,7 @@ const Index = () => {
                         className="w-[150px] h-[40px] mx-auto mb-4"
                     />
 
-                    <Text className="text-[20px] font-bold">Sign in to ResearchPortal</Text>
+                    <Text className="text-[20px] font-bold">Sign in to admin portal</Text>
                 </div>
 
                 <div className="px-2 pb-10 md:px-16">
