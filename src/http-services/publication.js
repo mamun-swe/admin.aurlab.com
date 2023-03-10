@@ -1,31 +1,35 @@
-
-import axios from "axios"
+import axios from "axios";
 
 /* Index */
 const index = async ({ page, limit }) => {
-    const header = {
-        headers: {
-            api_key: process.env.REACT_APP_API_KEY,
-            Authorization: "Bearer " + localStorage.getItem('token')
-        }
-    }
+  const header = {
+    headers: {
+      Authorization: "Bearer " + localStorage.getItem("token"),
+    },
+  };
 
-    return await axios.get(`${process.env.REACT_APP_ADMIN_ENDPOINT}publication?page=${page}&limit=${limit}`, header)
-}
+  return await axios.get(
+    `${process.env.REACT_APP_ADMIN_ENDPOINT}publication?page=${page}&limit=${limit}`,
+    header
+  );
+};
 
 /* Change status */
 const changeStatus = async (id) => {
-    const header = {
-        headers: {
-            api_key: process.env.REACT_APP_API_KEY,
-            Authorization: "Bearer " + localStorage.getItem('token')
-        }
-    }
+  const header = {
+    headers: {
+      Authorization: "Bearer " + localStorage.getItem("token"),
+    },
+  };
 
-    return await axios.put(`${process.env.REACT_APP_ADMIN_ENDPOINT}publication/${id}`, "", header)
-}
+  return await axios.put(
+    `${process.env.REACT_APP_ADMIN_ENDPOINT}publication/${id}`,
+    "",
+    header
+  );
+};
 
 export const Publication = {
-    index,
-    changeStatus
-}
+  index,
+  changeStatus,
+};
